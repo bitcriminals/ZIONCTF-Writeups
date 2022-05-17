@@ -26,11 +26,7 @@ for x in range(1,80):
     # images.append(Image.open(f"{filename}.png",mode="RGB"))
     images.append(cv2.imread(f"{filename}.png"))
 
-# for x in range(1,80):
-#     images[x]=cv2.cvtColor(images[x], cv2.COLOR_BGR2GRAY)
-# for x in range(2,80):
-#     images[1]=ImageChops.logical_and(images[1], images[x])
-# images[1].show()
+
 
 vis = cv2.bitwise_or(images[1], images[2])
 for x in range(3,79):
